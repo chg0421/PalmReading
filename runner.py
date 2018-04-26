@@ -19,26 +19,12 @@ def do_four(palm):
     palm.hard_line()
 
 
-
-
 if __name__ == "__main__":
 
     x = (input("Enter the type of line >>>"+'\n'))
-    if x == "head":
-            print("Fortune for HEAD line")
-            x = Head()
-    y = (input("Enter Short/Straight/Hard  >>> " + '\n'))
-    if y == "Short":
-        do_one(x)
-    elif y == "Straight":
-        do_two(x)
-    elif y == "Chain":
-        do_three(x)
-    elif y == "Hard":
-        do_four(x)
-    elif x=="heart":
-        print("Fortune for Heart line")
-        x = Heart()
+    if x == "Head":
+        print("Fortune for HEAD line")
+        x = Head()
         y = (input("Enter Short/Straight/Hard  >>> " + '\n'))
         if y == "Short":
             do_one(x)
@@ -52,6 +38,18 @@ if __name__ == "__main__":
         print("Fortune for Life line")
         x = Life()
         y = (input("Enter Short/Straight/Hard  >>> " +'\n'))
+        if y == "Short":
+            do_one(x)
+        elif y == "Straight":
+            do_two(x)
+        elif y == "Chain":
+            do_three(x)
+        elif y == "Hard":
+            do_four(x)
+    elif x == "Heart":
+        print("Fortune for Heart line")
+        x = Heart()
+        y = (input("Enter Short/Straight/Hard  >>> " + '\n'))
         if y == "Short":
             do_one(x)
         elif y == "Straight":
